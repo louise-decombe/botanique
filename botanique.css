@@ -1,0 +1,593 @@
+/** Suppression des marges par défaut **/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Spectral', serif, Georgia;
+}
+
+/** Suppression du soulignement par défaut des liens **/
+a {
+  text-decoration: none;
+}
+
+/*********** Header général **********/
+header {
+  border-bottom: solid 1px grey;
+  padding-bottom: 2%;
+  background-color: #F7FAF8;
+}
+
+#accueil {
+  color: #404341;
+}
+
+.header_titre {
+  text-align: center;
+  padding: 1%;
+  font-family: 'Prata', serif, Arial;
+}
+
+/** Alignement du menu de navigation **/
+.header_nav {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 110%;
+  font-family: 'Spectral', serif, Georgia;
+}
+
+/** Couleur des liens de navigation **/
+.menu_header {
+  color: grey;
+}
+
+.menu_header:hover {
+  color: lightgrey;
+}
+
+/**************** Page d'accueil *************/
+/************* Main ***********/
+/*** Première section ***/
+#accueil_1 {
+  width: 100%;
+  height: 80vh;
+  background: url('picture_plant.jpg') no-repeat center;
+  background-size: cover;
+  border-bottom: solid 1px grey;
+}
+
+.accueil_titre {
+  display: block;
+  width: 20%;
+  padding: 8%;
+  color: white;
+  font-size: 200%;
+  font-family: 'Prata', serif, Arial;
+}
+
+/*** Deuxième section ***/
+#accueil_2 {
+  width: 100%;
+  height: 80vh;
+  border: solid 1px grey;
+  display: flex;
+  flex-direction: row;
+  background-color: #F7FAF8;
+}
+
+.accueil_link {
+  display: block;
+  text-align: center;
+  color: grey;
+  font-size: 90%;
+  padding-top: 4%;
+}
+
+.accueil_link:hover {
+  color: lightgrey;
+}
+
+/*** Responsive ***/
+@media screen {
+  .p_accueil {
+    font-size: 120%;
+    padding: 4% 2% 2% 2%;
+    width: 70%;
+    border: 20px solid #b8cac1;
+    margin: 5% 2% 4% 2%;
+    text-align: center;
+    font-family: 'Spectral', serif, Georgia;
+  }
+}
+
+@media (max-width: 1024px) {
+  .p_accueil {
+    font-size: 110%;
+    padding: 3% 2% 5% 2%;
+    width: 70%;
+    max-height: 60%;
+    border: 10px solid #b8cac1;
+    margin: 5% 2% 2% 2%;
+    text-align: center;
+  }
+
+  .accueil_link {
+    display: none;
+  }
+}
+
+@media (max-width: 824px) {
+  .accueil_titre {
+    font-size: 150%;
+    color: black;
+  }
+
+  .p_accueil {
+    font-size: 80%;
+    padding: 3% 2% 5% 2%;
+    width: 70%;
+    height: 130%;
+    border: 10px solid #b8cac1;
+    margin: 5% 2% 2% 2%;
+    text-align: center;
+  }
+
+  .accueil_link {
+    display: none;
+  }
+}
+
+/************ Page de Présentation ************/
+/*** Première section ***/
+.presentation_titre {
+  background-color: rgb(233, 227, 213);
+  text-align: center;
+  padding: 2%;
+  font-family: 'Prata', serif, Arial;
+  color: #404341
+}
+
+#presentation_1 {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(233, 227, 213);
+  border-bottom: solid 1px grey;
+}
+
+.img_presentation {
+  border: solid 1px grey;
+  border-radius: 5px;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  width: 45%;
+}
+
+.p_presentation {
+  line-height: 1.8em;
+  padding: 7% 8% 8% 8%;
+  font-family: 'Spectral', serif, Georgia;
+  width: 55%;
+  text-align: justify;
+}
+
+.em_presentation {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+}
+
+/*** Deuxième section ***/
+.presentation_titre2 {
+  text-align: center;
+  padding: 2%;
+  font-family: 'Prata', serif, Arial;
+  background-color: #F7FAF8;
+  color: #404341;
+}
+
+#presentation_2 {
+  display: flex;
+  flex-direction: row;
+  border-bottom: solid 1px grey;
+  background-color: #F7FAF8;
+}
+
+.p_presentation2 {
+  background-color: #b8cac1;
+  margin: 4% 2% 6% 2%;
+  padding: 2%;
+  text-align: center;
+  line-height: 1.8em;
+  width: 30%;
+  border: solid 1px grey;
+  border-radius: 2px;
+  font-family: 'Spectral', serif, Georgia;
+}
+
+.presentation_link {
+  color: grey;
+}
+
+.presentation_link:hover {
+  color: white;
+}
+
+/*** Responsive ***/
+@media (max-width:1024px) {
+  .img_presentation {
+    display: none;
+  }
+
+  .p_presentation {
+    width: 100%;
+    text-align: justify;
+  }
+}
+
+/************* Page Plantes **********/
+/*** Première section ***/
+#plantes {
+  display: flex;
+  background-color: rgb(244, 242, 236);
+}
+
+#plantes1 {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(244, 242, 236);
+  border-bottom: solid 1px grey;
+  padding-bottom: 4%;
+}
+
+#p_intro_plantes {
+  font-family: 'Spectral', serif, Georgia;
+  font-style: italic;
+  text-align: center;
+  width: 80%;
+  margin: 2% 2% 2% 6%;
+}
+
+.article_plantes {
+  background-color: #b8cac1;
+  margin: 2%;
+  border: solid 1px grey;
+  border-radius: 2px;
+  width: 30%;
+}
+
+.titre_plantes {
+  font-size: 120%;
+  font-family: 'Prata', serif, Arial;
+  margin: 2% 2% 2% 5%;
+  font-weight: normal;
+}
+
+.p_plantes {
+  font-family: 'Spectral', serif, Georgia;
+  text-align: justify;
+  margin: 2% 5% 3% 5%;
+}
+
+/*** Deuxième section ***/
+#plantes2 {
+  display: flex;
+  flex-direction: row;
+  background-color: #F7FAF8;
+}
+
+.titre_plantes2 {
+  text-align: center;
+  background-color: #F7FAF8;
+  font-family: 'Prata', serif, Arial;
+  color: #404341;
+  padding-top: 2%;
+}
+
+.article_plantes2 {
+  width: 30%;
+  padding: 4%;
+}
+
+.img_plantes {
+  width: 100%;
+  height: 80%;
+  border-radius: 6px;
+  border: solid 4px #b8cac1;
+  margin-top: 5%;
+}
+
+.plantes_link {
+  color: grey;
+}
+
+.plantes_link:hover {
+  color: white;
+}
+
+.plantes_link2 {
+  color: grey;
+  font-size: 110%;
+  padding-left: 35%;
+}
+
+.plantes_link2:hover {
+  color: lightgrey;
+}
+
+/*** Responsive ***/
+@media (max-width:824px) {
+  .imgplantes_link {
+    display: none;
+  }
+}
+
+/********* Footer *********/
+/** cadre général du footer **/
+.bas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #b8cac1;
+  font-size: 100%;
+  text-align: center;
+}
+
+.bas img {
+  width: 20%;
+}
+
+/** catégories du footer **/
+.border {
+  background-color: #F7FAF8;
+  margin: 1%;
+  padding: 1%;
+  width: 20%;
+}
+
+.border:hover {
+  background-color: #b8cac1;
+  color: ;
+}
+
+/* WARNING: page legumes */
+.containerlegume {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 2%;
+  color: #404341;
+}
+
+.containerlegume img {
+  width: 50%;
+  max-width: 30%;
+  font-size: 150%;
+  border-radius: 10px;
+  border: solid 4px #b8cac1;
+}
+
+.containerlegume h1 {
+  text-align: center;
+}
+
+/*** Première section ***/
+.introlegume {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1%;
+}
+
+.introlegume section {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  text-align: justify;
+  color: #404341;
+}
+
+.introlegume img {
+  display: flex;
+  flex-basis: 50%;
+}
+
+/*** Deuxième section ***/
+.planterlegume {
+  display: flex;
+  flex-direction: row;
+}
+
+.planterlegume section {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  width: 50%;
+  padding: 2%;
+  margin: 2%;
+}
+
+.planterlegume img {
+  display: flex;
+  flex-basis: 50%;
+}
+
+/*** Troisième section ***/
+.legumesections {
+  display: flex;
+  flex-direction: row;
+  margin: 5%;
+}
+
+.legumesections p {
+  background-color: #b8cac1;
+  color: #404341;
+  flex-basis: 30%;
+  margin: 1%;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 150%;
+  padding: 20%:
+}
+
+.legumesections img {
+  flex-basis: 30%;
+  margin: 1%;
+}
+
+/* WARNING: page fleurs */
+.containerfleurs {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 2%;
+  color: #404341;
+}
+
+.containerfleurs img {
+  width: 50%;
+  max-width: 30%;
+  font-size: 150%;
+  border-radius: 10px;
+  border: solid 4px #b8cac1;
+}
+
+.containerfleurs h1 {
+  text-align: center;
+}
+
+/*** Première section ***/
+.introfleurs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1%;
+}
+
+.introfleurs section {
+  text-align: justify;
+  line-height: 200%;
+  margin-left: 2%;
+}
+
+/*** Deuxième section ***/
+.planterfleurs {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 2%;
+}
+
+.planterfleurs p {
+  display: flex;
+  flex-direction: row;
+  padding: 1%;
+  text-align: justify;
+}
+
+/*** Troisième section ***/
+.fleurssections {
+  display: flex;
+  flex-direction: row;
+  margin: 5%;
+}
+
+.fleurssections p {
+  background-color: #b8cac1;
+  width: 50%;
+  color: #404341;
+  margin: 1%;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 150%;
+}
+
+.fleurssections img {
+  width: 15%;
+  margin: 1%;
+}
+
+/* WARNING: page arbustes */
+.containerarbustes {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 2%;
+  color: #404341;
+}
+
+.containerarbustes img {
+  width: 50%;
+  max-width: 30%;
+  font-size: 150%;
+  border-radius: 10px;
+  border: solid 4px #b8cac1;
+}
+
+.containerarbustes h1 {
+  text-align: center;
+}
+
+/*** Première section ***/
+.introarbustes {
+  height: 100%;
+  padding: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.introarbustes section {
+  line-height: 200%;
+  padding: 2%;
+  text-align: justify;
+  width: 40%;
+}
+
+/*** Deuxième section ***/
+.planterarbustes {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 2%;
+}
+
+.planterarbustes p {
+  display: flex;
+  flex-direction: row;
+  padding: 1%;
+  text-align: justify;
+}
+
+.planterarbustes img {
+  display: flex;
+  flex-basis: 50%;
+}
+
+/*** Troisième section ***/
+.arbustessections {
+  display: flex;
+  flex-direction: row;
+  margin: 5%;
+}
+
+.arbustessections p {
+  background-color: #b8cac1;
+  width: 50%;
+  color: #404341;
+  margin: 1%;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 150%;
+}
+
+.arbustessections img {
+  width: 15%;
+  margin: 1%;
+}
+
+span {
+  font-weight: bold;
+}
